@@ -7,7 +7,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                Test
+                <Counter> </Counter>
              </div>
         )
     }

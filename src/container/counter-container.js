@@ -1,10 +1,11 @@
 import React from "react";
+import Counter from "../components/counter.js";
 
 class CounterContainer extends React.Component {
     render() {
         return (
             <div>
-                Test
+                <Counter counter={101}></Counter>
             </div>
         )
     }
