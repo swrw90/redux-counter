@@ -1,4 +1,9 @@
 import React from "react";
+
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import * as actionCreators from "../actions/";
+
 import Counter from "../components/counter.js";
 
 class CounterContainer extends React.Component {
