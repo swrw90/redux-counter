@@ -13,6 +13,10 @@ const mainReducer = (state = defaultState, action) => {
             ...state,
             counter: state.counter - 1
         }
+    } else {
+        return {
+            ...state
+        }
     }
 }
 

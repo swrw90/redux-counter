@@ -5,8 +5,8 @@ class Counter extends React.Component {
         return (
             <div>
                 <h3>{this.props.counter}</h3>
-                <button>+</button>
-                <button>-</button>
+                <button onClick={this.props.handleUp}>+</button>
+                <button onClick={this.props.handleDown}>-</button>
             </div>
         )
     }

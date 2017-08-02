@@ -10,10 +10,13 @@ class CounterContainer extends React.Component {
     render() {
         return (
             <div>
-                <Counter counter={101}></Counter>
+                <Counter counter={this.props.counter} handleUp={this.props.up} handleDown={this.props.down}></Counter>
             </div>
         )
     }
 }
 
-export default CounterContainer;
+const mapStateToProps = (state) => { return state }
+const mapDispatchToProps = (dispatch) => { return bindActionCreators(actionCreators, dispatch) };
+
+export default connect(mapStateToProps, mapDispatchToProps)(CounterContainer);
